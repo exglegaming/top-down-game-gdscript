@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://blbtklnd2rnwp" path="res://scripts/ui/main_menu.gd" id="1_sl1te"]
 [ext_resource type="Texture2D" uid="uid://bjnh3sonwurje" path="res://assets/sprites/background_tiled.png" id="2_fe2o3"]
 [ext_resource type="Shader" uid="uid://miwppupfy727" path="res://shaders/ui/background.gdshader" id="2_m1kxf"]
+[ext_resource type="AudioStream" uid="uid://dtxhputnlac6" path="res://assets/sounds/select-a.ogg" id="2_wb0q5"]
 [ext_resource type="FontFile" uid="uid://cmkei0r5t77jr" path="res://assets/font/Lilian.ttf" id="3_1g8jr"]
 [ext_resource type="LabelSettings" uid="uid://crnwmo5f7yknx" path="res://extra/font_48.tres" id="4_m1kxf"]
 [ext_resource type="Texture2D" uid="uid://dy8e3xkc5qdbp" path="res://assets/sprites/interface/Tilemap/tilemap_packed.png" id="5_x2yvf"]
@@ -43,6 +44,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sl1te")
+
+[node name="UISound" type="AudioStreamPlayer" parent="." unique_id=1394031017]
+stream = ExtResource("2_wb0q5")
+bus = &"SFX"
 
 [node name="Background" type="TextureRect" parent="." unique_id=1466478163]
 material = SubResource("ShaderMaterial_x2yvf")
@@ -257,7 +262,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "MUSIC"
+text = "MUSIC: ON"
 label_settings = ExtResource("6_uhagc")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -293,7 +298,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "SFX"
+text = "SFX: ON"
 label_settings = SubResource("LabelSettings_btxxm")
 horizontal_alignment = 1
 vertical_alignment = 1
