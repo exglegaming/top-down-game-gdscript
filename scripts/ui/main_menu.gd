@@ -24,7 +24,7 @@ func _ready() -> void:
 
 
 func _on_play_button_pressed() -> void:
-	pass
+	Transition.transition_to("uid://c3cmsrcl4xvy2")
 
 
 func _on_settings_button_pressed() -> void:

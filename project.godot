@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Top Down Game"
+run/main_scene="uid://dljyr1tf0br1x"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Transition="*uid://cbcypdy7tuvnk"
 
 [display]
 
