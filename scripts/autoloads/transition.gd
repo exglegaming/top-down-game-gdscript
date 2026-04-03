@@ -1,6 +1,5 @@
 extends Node
 
-
 @onready var effect: ColorRect = %Effect
 
 

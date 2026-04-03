@@ -28,4 +28,3 @@ func load_data() -> void:
 	file.close()
 
 	settings = data
-

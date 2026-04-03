@@ -1,9 +1,7 @@
-extends Control
-class_name MainMenu
+class_name MainMenu extends Control
 
 
 @export var debug: bool
-
 
 @onready var main_buttons: Control = $MainButtons
 @onready var settings_buttons: Control = $SettingsButtons
@@ -37,7 +35,7 @@ func _ready() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if debug:
-		if event.is_action_pressed("dev_save"):
+		if event.is_action_pressed(&"dev_save"):
 			Global.save_data()
 
 
