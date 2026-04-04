@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3 uid="uid://cd7sx2eedtvp2"]
+
+[ext_resource type="Texture2D" uid="uid://ddl1y3k5qm3mu" path="res://assets/sprites/weapons/Tiles/tile_0008.png" id="1_uuo7m"]
+[ext_resource type="Script" uid="uid://ff8p51e7jx1x" path="res://scripts/resources/data/weapons/weapon_data.gd" id="2_2ijia"]
+
+[resource]
+script = ExtResource("2_2ijia")
+weapon_name = "Sword"
+icon = ExtResource("1_uuo7m")
+damage = 0.6
+cooldown = 0.15
+mana_cost = 0.1
+metadata/_custom_type_script = "uid://ff8p51e7jx1x"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3 uid="uid://d3q1j5qh25con"]
+
+[ext_resource type="Texture2D" uid="uid://hm683tll4af4" path="res://assets/sprites/weapons/Tiles/tile_0009.png" id="1_1drct"]
+[ext_resource type="Script" uid="uid://ff8p51e7jx1x" path="res://scripts/resources/data/weapons/weapon_data.gd" id="2_bhx5x"]
+
+[resource]
+script = ExtResource("2_bhx5x")
+weapon_name = "Axe"
+icon = ExtResource("1_1drct")
+damage = 0.9
+cooldown = 0.3
+mana_cost = 0.3
+metadata/_custom_type_script = "uid://ff8p51e7jx1x"
