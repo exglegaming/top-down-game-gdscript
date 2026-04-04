@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b16wijf44vix1" path="res://scripts/player/player.gd" id="1_xb0ah"]
 [ext_resource type="Texture2D" uid="uid://dawvmsgg5mc6o" path="res://assets/sprites/Shadow.png" id="2_5np8l"]
 [ext_resource type="PackedScene" uid="uid://dnueqkuwxvjnc" path="res://scenes/components/health_component.tscn" id="2_76ihk"]
+[ext_resource type="Script" uid="uid://jt5colsjdy5s" path="res://scripts/weapons/weapon_controller.gd" id="4_t60ga"]
 
 [node name="PlayerBase" type="CharacterBody2D" unique_id=63277256]
 motion_mode = 1
@@ -22,3 +23,6 @@ texture = ExtResource("2_5np8l")
 unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1063572224]
+
+[node name="WeaponController" type="Node2D" parent="." unique_id=728585574]
+script = ExtResource("4_t60ga")

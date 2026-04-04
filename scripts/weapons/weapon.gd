@@ -1,0 +1,11 @@
+class_name Weapon extends Node2D
+
+
+@export var data: WeaponData
+
+@onready var pivot: Node2D = $Pivot
+@onready var sprite_2d: Sprite2D = %Sprite2D
+
+
+func use_weapon() -> void:
+	pass
