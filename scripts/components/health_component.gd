@@ -18,7 +18,7 @@ func take_damage(value: float) -> void:
 	if current_health > 0:
 		current_health -= value
 		on_unit_damaged.emit(value)
-	
+
 	if current_health <= 0:
 		die()
 

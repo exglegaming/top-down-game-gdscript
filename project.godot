@@ -24,6 +24,12 @@ buses/default_bus_layout="uid://i6akpsna6jdd"
 Transition="*uid://cbcypdy7tuvnk"
 Global="*uid://bqncih2vtyvto"
 Music="*uid://r8x36hfn2xtf"
+EventBus="*uid://6wf7jl6mnxq6"
+
+[debug]
+
+gdscript/warnings/untyped_declaration=2
+gdscript/warnings/inferred_declaration=1
 
 [display]
 
