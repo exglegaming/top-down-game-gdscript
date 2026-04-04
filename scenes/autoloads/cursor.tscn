@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dijvykpb8a5m3"]
+
+[ext_resource type="Script" uid="uid://ce8ltall57v6t" path="res://scripts/autoloads/cursor.gd" id="1_rhblp"]
+
+[node name="Cursor" type="CanvasLayer" unique_id=1812590024]
+script = ExtResource("1_rhblp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1296875236]
