@@ -2,7 +2,7 @@ extends Node
 
 
 const SAVE_PATH: String = "user://save.json"
- 
+
 var settings: Dictionary = {
 	"music": true,
 	"sfx": true,
