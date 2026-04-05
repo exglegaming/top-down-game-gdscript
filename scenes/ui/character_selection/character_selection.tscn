@@ -1,11 +1,29 @@
 [gd_scene format=3 uid="uid://c3cmsrcl4xvy2"]
 
 [ext_resource type="PackedScene" uid="uid://c1fmvuxpobw2a" path="res://scenes/ui/background.tscn" id="1_avnoy"]
+[ext_resource type="Script" uid="uid://m25ou2jviw1x" path="res://scripts/ui/character_selection/character_selection.gd" id="1_jtguu"]
 [ext_resource type="LabelSettings" uid="uid://crnwmo5f7yknx" path="res://extra/font_48.tres" id="2_qkry7"]
+[ext_resource type="Script" uid="uid://5sxxpkg2vcpy" path="res://scripts/resources/data/player/player_data.gd" id="2_r0g64"]
 [ext_resource type="PackedScene" uid="uid://dqf62jp6j848q" path="res://scenes/ui/player_card/player_card.tscn" id="3_1dsk2"]
+[ext_resource type="Resource" uid="uid://dfo255b6xc6y8" path="res://resources/data/player/player_bunny.tres" id="3_nobp3"]
 [ext_resource type="PackedScene" uid="uid://cqqynmxuyahf5" path="res://scenes/ui/weapon_card/weapon_card.tscn" id="4_5vvnq"]
+[ext_resource type="Resource" uid="uid://br41ostuwhiyd" path="res://resources/data/player/player_cat.tres" id="4_k1gwy"]
 [ext_resource type="Texture2D" uid="uid://dy8e3xkc5qdbp" path="res://assets/sprites/interface/Tilemap/tilemap_packed.png" id="5_nbxll"]
+[ext_resource type="Resource" uid="uid://dpshaag34urcj" path="res://resources/data/player/player_dog.tres" id="5_widpi"]
 [ext_resource type="LabelSettings" uid="uid://dk5iauu2m3td1" path="res://extra/font_16.tres" id="6_l7gu0"]
+[ext_resource type="Resource" uid="uid://dsj01unheignk" path="res://resources/data/player/player_mouse.tres" id="6_rqvtf"]
+[ext_resource type="Script" uid="uid://ff8p51e7jx1x" path="res://scripts/resources/data/weapons/weapon_data.gd" id="7_0026x"]
+[ext_resource type="Resource" uid="uid://b4we7o62k7pfi" path="res://resources/data/weapons/weapon_ak47.tres" id="8_dlko0"]
+[ext_resource type="Resource" uid="uid://de58rvectspsi" path="res://resources/data/weapons/weapon_mac10.tres" id="10_iname"]
+[ext_resource type="Resource" uid="uid://b1tjva1xwv1v2" path="res://resources/data/weapons/weapon_mp5.tres" id="11_gqemw"]
+[ext_resource type="Resource" uid="uid://bmiw5qmpnrxc8" path="res://resources/data/weapons/weapon_pistol.tres" id="12_1uew2"]
+[ext_resource type="Resource" uid="uid://ym45e8xmv604" path="res://resources/data/weapons/weapon_shotgun.tres" id="13_65miu"]
+[ext_resource type="Resource" uid="uid://ck075u6mmx6le" path="res://resources/data/weapons/weapon_sniper.tres" id="14_51d43"]
+[ext_resource type="Resource" uid="uid://mvghbckxpux8" path="res://resources/data/weapons/weapon_uzi.tres" id="16_ix6u8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6g0l1"]
+atlas = ExtResource("5_nbxll")
+region = Rect2(80, 65, 15, 14)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5vvnq"]
 atlas = ExtResource("5_nbxll")
@@ -22,6 +40,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jtguu")
+selection_cursor = SubResource("AtlasTexture_6g0l1")
+players = Array[ExtResource("2_r0g64")]([ExtResource("3_nobp3"), ExtResource("4_k1gwy"), ExtResource("5_widpi"), ExtResource("6_rqvtf")])
+weapons = Array[ExtResource("7_0026x")]([ExtResource("8_dlko0"), ExtResource("10_iname"), ExtResource("11_gqemw"), ExtResource("12_1uew2"), ExtResource("13_65miu"), ExtResource("14_51d43"), ExtResource("16_ix6u8")])
 
 [node name="Background" parent="." unique_id=2089865399 instance=ExtResource("1_avnoy")]
 layout_mode = 1

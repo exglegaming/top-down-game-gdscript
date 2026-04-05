@@ -54,7 +54,7 @@ func update_fullscreen(is_on: bool) -> void:
 
 func _on_play_button_pressed() -> void:
 	ui_sound.play()
-	Transition.transition_to("uid://b1atidwao71gr")
+	Transition.transition_to("uid://c3cmsrcl4xvy2")
 
 
 func _on_settings_button_pressed() -> void:
